@@ -1,0 +1,65 @@
+.pantalla {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+}
+
+.info {
+  position: absolute;  
+  padding: 10px;
+  color: brown;
+  z-index: 1;
+}
+
+.ganaste {
+  font-size: xx-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  width: 300px;
+  height: 200px;
+  margin-left: -150px;  
+  color: brown;
+  z-index: 3;
+  text-align: center;
+}
+
+.ganaste button {
+  position: relative;  
+  color: brown;  
+}
+
+.new {  
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+}
+
+.cuadro {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.tablero {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  justify-content: center;  
+  z-index: 2;
+}
+
+#contenedor {  
+  height: 100vh;
+  display: flex;
+}
+
+.seleccionado{
+  background-color: black;
+}
+
+
+.seleccionadoUltimo{
+  background-color: red;
+}
