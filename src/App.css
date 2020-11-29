@@ -1,65 +1,67 @@
 .pantalla {
   position: absolute;
   width: 100%;
-  height: 100%;  
+  height: 100%;
 }
 
 .info {
-  position: absolute;  
+  position: absolute;
   padding: 10px;
   color: brown;
   z-index: 1;
 }
 
 .ganaste {
+  background-color: cadetblue;
   font-size: xx-large;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -100px;
-  width: 300px;
-  height: 200px;
-  margin-left: -150px;  
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  border-radius: 1rem;
   color: brown;
   z-index: 3;
   text-align: center;
 }
 
 .ganaste button {
-  position: relative;  
-  color: brown;  
+  position: relative;
+  color: brown;
 }
 
-.new {  
+.new {
   position: absolute;
   top: 50%;
-  left: 50%;  
+  left: 50%;
 }
 
 .cuadro {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  box-shadow: inset 1px -1px 0px black;
 }
 
 .tablero {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  justify-content: center;  
+  justify-content: center;
   z-index: 2;
 }
 
-#contenedor {  
+@media screen and (max-width: 720px) {
+  .tablero {
+    flex-wrap: wrap;
+  }
+}
+
+#contenedor {
   height: 100vh;
   display: flex;
 }
 
-.seleccionado{
+.seleccionado {
   background-color: black;
 }
 
-
-.seleccionadoUltimo{
+.seleccionadoUltimo {
   background-color: red;
 }
